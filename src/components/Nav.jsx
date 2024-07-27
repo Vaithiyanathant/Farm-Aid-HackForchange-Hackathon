@@ -9,6 +9,8 @@ import { getAuth, signOut } from "firebase/auth"; // Import Firebase Authenticat
 const navigation = [
 	{ name: "Home", href: "/home", current: true },
 	{ name: "Gis Crop Analysis", href: "/leafletmap", current: true },
+	{ name: "Your farm", href: "/farm", current: true },
+	{ name: "weather", href: "/weather", current: true },
 ];
 
 function classNames(...classes) {
@@ -18,11 +20,11 @@ function classNames(...classes) {
 export default function Nav() {
 	const [notificationsOpen, setNotificationsOpen] = useState(false);
 	const [notifications, setNotifications] = useState([
-		"New comment on your post",
-		"New follower added",
-		"New comment on your post",
-		"New comment on your post",
-		"New comment on your post",
+		"Check the irrigation level",
+		"high risk for pest",
+		"irigation in control",
+		"plan for next crop",
+		"ai is ready to help you for cropplanning",
 
 		// Add more notifications as needed
 	]);

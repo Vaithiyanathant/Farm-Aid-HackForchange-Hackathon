@@ -5,9 +5,10 @@ import Nav from "./Nav";
 
 const Home = () => {
 	return (
-		<div>
+		<>
 			<Nav></Nav>
-		</div>
+			<div>Home</div>
+		</>
 	);
 };
 

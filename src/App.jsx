@@ -5,8 +5,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LeafletMap from "./LeafletMap";
 import CropAnalysis from "./CropAnalysis";
 import Home from "./components/Home";
-import Login from "./components/Login"; // Default import
+import Login from "./components/Login";
 import Profile from "./components/Profile";
+import Farm from "./components/Farm";
+import Weather from "./components/Weather"; // Import the Weather component
 
 const App = () => {
 	return (
@@ -28,10 +30,17 @@ const App = () => {
 					path='/profile'
 					element={<Profile />}
 				/>
-
+				<Route
+					path='/weather'
+					element={<Weather />}
+				/>
 				<Route
 					path='/crop-analysis/:stateName'
 					element={<CropAnalysis />}
+				/>
+				<Route
+					path='/farm'
+					element={<Farm />}
 				/>
 			</Routes>
 		</Router>
