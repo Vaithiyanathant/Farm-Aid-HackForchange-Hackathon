@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import Nav from './components/Nav';
 
 const LeafletMap = () => {
   const [showTable, setShowTable] = useState(true);
@@ -121,21 +122,31 @@ const LeafletMap = () => {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row bg-black">
-  <div id="map" className="w-full h-64 lg:h-full border-r" style={{ minHeight: '900px' }} />
-  
-  <div className="flex flex-col p-4">
-    <h1 className='mb-5 text-2xl text-white'>List of Available Crops :</h1>
-    <div id="info-div-container" className="flex flex-wrap border-2 border-blue-500 p-2 mb-4 rounded-lg">
-      {/* Place your crop information components here */}
-    </div>
-    <div className='border-2 border-gray-500 p-2 rounded-md cursor-pointer text-white'>
-      Click Here to get Detailed Analysis.
-    </div>
-  </div>
-</div>
+		<>
+			<Nav></Nav>
+			<div className='flex flex-col lg:flex-row bg-black'>
+				<div
+					id='map'
+					className='w-full h-64 lg:h-full border-r'
+					style={{ minHeight: "900px" }}
+				/>
 
-  );
+				<div className='flex flex-col p-4'>
+					<h1 className='mb-5 text-2xl text-white'>
+						List of Available Crops :
+					</h1>
+					<div
+						id='info-div-container'
+						className='flex flex-wrap border-2 border-blue-500 p-2 mb-4 rounded-lg'>
+						{/* Place your crop information components here */}
+					</div>
+					<div className='border-2 border-gray-500 p-2 rounded-md cursor-pointer text-white'>
+						Click Here to get Detailed Analysis.
+					</div>
+				</div>
+			</div>
+		</>
+	);
  
 };
 
