@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import Profile from "./components/Profile";
 import Farm from "./components/Farm";
 import Weather from "./components/Weather"; // Import the Weather component
+import Settings from "./components/settings";
 
 const App = () => {
 	return (
@@ -41,6 +42,10 @@ const App = () => {
 				<Route
 					path='/farm'
 					element={<Farm />}
+				/>
+				<Route
+					path='/settings'
+					element={<Settings />}
 				/>
 			</Routes>
 		</Router>

@@ -86,6 +86,7 @@ export default function Nav() {
 							<div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
 								<div className='flex flex-shrink-0 items-center'>
 									<img
+										src='https://www.shutterstock.com/image-vector/agriculture-logo-template-suitable-businesses-600nw-2127348449.jpg'
 										className='h-8 w-auto'
 										alt='Company Logo'
 									/>
@@ -162,8 +163,8 @@ export default function Nav() {
 											</Menu.Item>
 											<Menu.Item>
 												{({ active }) => (
-													<a
-														href='#'
+													<Link
+														to='/settings'
 														className={classNames(
 															active
 																? "bg-gray-100 text-gray-900"
@@ -171,7 +172,7 @@ export default function Nav() {
 															"block px-4 py-2 text-sm"
 														)}>
 														Settings
-													</a>
+													</Link>
 												)}
 											</Menu.Item>
 											<Menu.Item>
