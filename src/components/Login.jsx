@@ -23,21 +23,26 @@ const Login = () => {
 	};
 
 	return (
-		<section className='flex items-center justify-center min-h-screen bg-gray-100'>
+		<section className='flex items-center justify-center min-h-screen bg-green-50'>
 			<div className='bg-white flex rounded-lg shadow-xl max-w-md w-full p-8'>
 				<div className='w-full'>
-					<h2 className='text-4xl font-bold text-gray-800 mb-6'>Sign In</h2>
-					<p className='text-base text-gray-600 mb-8'>
-						Please sign in to continue.
+					<h2 className='text-4xl font-bold text-green-700 mb-6'>Sign In</h2>
+					<p className='text-base text-gray-700 mb-8'>
+						Welcome to the{" "}
+						<span className='font-semibold text-green-600'>
+							Farm Management Dashboard
+						</span>
+						! Manage your farm efficiently with tools for monitoring crops,
+						analyzing soil health, and planning your farming activities. Sign in
+						to access personalized insights and recommendations tailored to your
+						farm's needs.
 					</p>
 					{error && <p className='text-red-500 mb-6'>{error}</p>}
-
 					<button
 						onClick={handleGoogleSignIn}
-						className='w-full py-3 bg-black text-white border border-transparent rounded-lg shadow-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 transition-colors'>
+						className='w-full py-3 bg-green-600 text-white border border-transparent rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors'>
 						<span className='text-lg font-semibold'>Sign in with Google</span>
 					</button>
-
 				</div>
 			</div>
 		</section>

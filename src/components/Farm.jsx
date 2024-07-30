@@ -70,17 +70,19 @@ const Farm = () => {
 
 	return (
 		<>
-			<Nav></Nav>{" "}
-			<div className='p-6 bg-gray-100 min-h-screen'>
-				<h1 className='text-3xl font-bold mb-6'>Smart Farming Assistant</h1>
+			<Nav />
+			<div className='p-6 bg-green-50 min-h-screen'>
+				<h1 className='text-3xl font-bold text-green-800 mb-6'>
+					Smart Farming Assistant
+				</h1>
 				<div className='flex flex-wrap -mx-6'>
 					{/* Real-time Soil Monitoring */}
-					<IrrigationSystem></IrrigationSystem>
+					<IrrigationSystem />
 
 					{/* Crop Health Monitoring */}
 					<div className='w-full lg:w-1/2 p-6'>
 						<div className='bg-white p-6 rounded-lg shadow-lg'>
-							<h2 className='text-xl font-semibold mb-4'>
+							<h2 className='text-xl font-semibold text-green-700 mb-4'>
 								Crop Health Monitoring
 							</h2>
 							<ResponsiveContainer
@@ -94,17 +96,17 @@ const Farm = () => {
 									<Legend />
 									<Bar
 										dataKey='pest'
-										fill='#8884d8'
+										fill='#FF7043'
 										name='Pest Detection'
 									/>
 									<Bar
 										dataKey='disease'
-										fill='#82ca9d'
+										fill='#64B5F6'
 										name='Disease Detection'
 									/>
 									<Bar
 										dataKey='growth'
-										fill='#ffc658'
+										fill='#4DB6AC'
 										name='Growth Tracking'
 									/>
 								</BarChart>
@@ -114,7 +116,9 @@ const Farm = () => {
 
 					<div className='w-full lg:w-1/2 p-6'>
 						<div className='bg-white p-6 rounded-lg shadow-lg'>
-							<h2 className='text-xl font-semibold mb-4'>Soil Monitoring</h2>
+							<h2 className='text-xl font-semibold text-green-700 mb-4'>
+								Soil Monitoring
+							</h2>
 							<ResponsiveContainer
 								width='100%'
 								height={300}>
@@ -127,19 +131,19 @@ const Farm = () => {
 									<Line
 										type='monotone'
 										dataKey='moisture'
-										stroke='#8884d8'
+										stroke='#F57C00'
 										name='Moisture Levels'
 									/>
 									<Line
 										type='monotone'
 										dataKey='pH'
-										stroke='#82ca9d'
+										stroke='#C2185B'
 										name='pH Levels'
 									/>
 									<Line
 										type='monotone'
 										dataKey='nutrients'
-										stroke='#ffc658'
+										stroke='#00796B'
 										name='Nutrient Levels'
 									/>
 								</LineChart>
@@ -150,7 +154,9 @@ const Farm = () => {
 					{/* Weather Station Integration */}
 					<div className='w-full lg:w-1/2 p-6'>
 						<div className='bg-white p-6 rounded-lg shadow-lg'>
-							<h2 className='text-xl font-semibold mb-4'>Weather Station</h2>
+							<h2 className='text-xl font-semibold text-green-700 mb-4'>
+								Weather Station
+							</h2>
 							<ResponsiveContainer
 								width='100%'
 								height={300}>
@@ -163,25 +169,25 @@ const Farm = () => {
 									<Line
 										type='monotone'
 										dataKey='temp'
-										stroke='#ff7300'
+										stroke='#D32F2F'
 										name='Temperature'
 									/>
 									<Line
 										type='monotone'
 										dataKey='humidity'
-										stroke='#387908'
+										stroke='#1976D2'
 										name='Humidity'
 									/>
 									<Line
 										type='monotone'
 										dataKey='rainfall'
-										stroke='#8884d8'
+										stroke='#388E3C'
 										name='Rainfall'
 									/>
 									<Line
 										type='monotone'
 										dataKey='wind'
-										stroke='#ff7300'
+										stroke='#FBC02D'
 										name='Wind Speed'
 									/>
 								</LineChart>

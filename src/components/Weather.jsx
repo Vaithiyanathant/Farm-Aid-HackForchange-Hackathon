@@ -39,7 +39,7 @@ const Weather = () => {
 				url: `https://open-weather13.p.rapidapi.com/city/${selectedCity}/EN`,
 				headers: {
 					"x-rapidapi-key":
-						"a42907c6a4mshf634e3216b50f5dp127f8cjsnb3fbe88a0cf4",
+						"8e004155bdmsh7e1745ef0ad80a2p12a799jsn62c5bbcd1042",
 					"x-rapidapi-host": "open-weather13.p.rapidapi.com",
 				},
 			};
@@ -58,7 +58,7 @@ const Weather = () => {
 	if (!weatherData) {
 		return (
 			<div className='p-4 max-w-md mx-auto bg-white rounded-xl shadow-md space-y-4'>
-				<p className='text-center'>Loading...</p>
+				<p className='text-center text-gray-700'>Loading...</p>
 			</div>
 		);
 	}
@@ -90,24 +90,22 @@ const Weather = () => {
 
 	return (
 		<>
-			{" "}
-			<Nav></Nav>
-			<br></br>
-			<div className='p-6 max-w-6xl mx-auto bg-white rounded-xl shadow-md space-y-6'>
-				<h1 className='text-4xl font-bold mb-6 text-center text-gray-800'>
+			<Nav />
+			<div className='p-6 max-w-6xl mx-auto bg-green-50 rounded-xl shadow-lg space-y-6'>
+				<h1 className='text-4xl font-bold mb-6 text-center text-green-800'>
 					Weather Dashboard for {name}
 				</h1>
 
 				{/* Dropdown for City Selection */}
 				<div className='flex justify-center mb-6'>
 					<div className='w-full max-w-xs'>
-						<label className='block text-lg font-medium mb-2 text-center text-gray-700'>
+						<label className='block text-lg font-medium mb-2 text-center text-gray-800'>
 							Select City:
 						</label>
 						<select
 							value={selectedCity}
 							onChange={(e) => setSelectedCity(e.target.value)}
-							className='p-3 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500'>
+							className='p-3 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500'>
 							{cities.map((city) => (
 								<option
 									key={city}
@@ -120,46 +118,46 @@ const Weather = () => {
 				</div>
 
 				{/* Weather Information */}
-				<div className='bg-gray-100 p-6 rounded-lg shadow-lg'>
+				<div className='bg-green-100 p-6 rounded-lg shadow-lg'>
 					<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Location:</strong> Latitude {coord.lat}, Longitude{" "}
 							{coord.lon}
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Weather:</strong> {weatherCondition.main} -{" "}
 							{weatherCondition.description}
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Temperature:</strong> {main.temp}°F (Feels like{" "}
 							{main.feels_like}°F)
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Min Temperature:</strong> {main.temp_min}°F
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Max Temperature:</strong> {main.temp_max}°F
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Humidity:</strong> {main.humidity}%
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Pressure:</strong> {main.pressure} hPa
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Visibility:</strong> {visibility} meters
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Wind Speed:</strong> {wind.speed} m/s at {wind.deg}°
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Cloudiness:</strong> {clouds.all}%
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Sunrise:</strong>{" "}
 							{new Date(sys.sunrise * 1000).toLocaleTimeString()}
 						</p>
-						<p className='text-gray-700'>
+						<p className='text-gray-800'>
 							<strong>Sunset:</strong>{" "}
 							{new Date(sys.sunset * 1000).toLocaleTimeString()}
 						</p>
@@ -169,8 +167,8 @@ const Weather = () => {
 				{/* Charts and Visualizations */}
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
 					{/* Pie Chart */}
-					<div className='bg-gray-100 p-6 rounded-lg shadow-lg'>
-						<h2 className='text-xl font-semibold mb-4 text-center text-gray-800'>
+					<div className='bg-green-100 p-6 rounded-lg shadow-lg'>
+						<h2 className='text-xl font-semibold mb-4 text-center text-green-800'>
 							Weather Data Distribution
 						</h2>
 						<ResponsiveContainer
@@ -198,8 +196,8 @@ const Weather = () => {
 					</div>
 
 					{/* Line Chart */}
-					<div className='bg-gray-100 p-6 rounded-lg shadow-lg'>
-						<h2 className='text-xl font-semibold mb-4 text-center text-gray-800'>
+					<div className='bg-green-100 p-6 rounded-lg shadow-lg'>
+						<h2 className='text-xl font-semibold mb-4 text-center text-green-800'>
 							Temperature Trends
 						</h2>
 						<ResponsiveContainer
@@ -222,8 +220,8 @@ const Weather = () => {
 					</div>
 
 					{/* Bar Chart */}
-					<div className='bg-gray-100 p-6 rounded-lg shadow-lg'>
-						<h2 className='text-xl font-semibold mb-4 text-center text-gray-800'>
+					<div className='bg-green-100 p-6 rounded-lg shadow-lg'>
+						<h2 className='text-xl font-semibold mb-4 text-center text-green-800'>
 							Weather Parameters
 						</h2>
 						<ResponsiveContainer
@@ -244,8 +242,8 @@ const Weather = () => {
 					</div>
 
 					{/* Radar Chart */}
-					<div className='bg-gray-100 p-6 rounded-lg shadow-lg'>
-						<h2 className='text-xl font-semibold mb-4 text-center text-gray-800'>
+					<div className='bg-green-100 p-6 rounded-lg shadow-lg'>
+						<h2 className='text-xl font-semibold mb-4 text-center text-green-800'>
 							Radar Chart of Weather Parameters
 						</h2>
 						<ResponsiveContainer

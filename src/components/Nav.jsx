@@ -4,13 +4,13 @@ import { Fragment, useState, useEffect } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, useNavigate } from "react-router-dom";
-import { getAuth, signOut } from "firebase/auth"; // Import Firebase Authentication
+import { getAuth, signOut } from "firebase/auth";
 
 const navigation = [
-	{ name: "Home", href: "/home", current: true },
-	{ name: "Gis Crop Analysis", href: "/leafletmap", current: true },
-	{ name: "Your farm", href: "/farm", current: true },
-	{ name: "weather", href: "/weather", current: true },
+	{ name: "Home", href: "/home" },
+	{ name: "Gis Crop Analysis", href: "/leafletmap" },
+	{ name: "Your Farm", href: "/farm" },
+	{ name: "Weather", href: "/weather" },
 ];
 
 function classNames(...classes) {
@@ -20,18 +20,14 @@ function classNames(...classes) {
 export default function Nav() {
 	const [notificationsOpen, setNotificationsOpen] = useState(false);
 	const [notifications, setNotifications] = useState([
-		"Check the irrigation level",
-		"high risk for pest",
-		"irigation in control",
-		"plan for next crop",
-		"ai is ready to help you for cropplanning",
-
-		// Add more notifications as needed
+		{ message: "Check the irrigation level", type: "info" },
+		{ message: "High risk for pests", type: "warning" },
+		{ message: "Irrigation in control", type: "success" },
+		{ message: "Plan for next crop", type: "info" },
+		{ message: "AI is ready to help with crop planning", type: "success" },
 	]);
-	const auth = getAuth(); // Get Firebase Auth instance
+	const auth = getAuth();
 	const navigate = useNavigate();
-
-	// Update notification count based on the length of notifications
 	const [notificationCount, setNotificationCount] = useState(
 		notifications.length
 	);
@@ -42,11 +38,11 @@ export default function Nav() {
 
 	const handleLogout = async () => {
 		try {
-			await signOut(auth); // Sign out using Firebase Auth
-			localStorage.clear(); // Clear local storage if needed
-			navigate("/"); // Redirect to home page
+			await signOut(auth);
+			localStorage.clear();
+			navigate("/");
 		} catch (error) {
-			console.error("Logout Error:", error.message); // Log any errors
+			console.error("Logout Error:", error.message);
 		}
 	};
 
@@ -54,21 +50,24 @@ export default function Nav() {
 		setNotificationsOpen(!notificationsOpen);
 	};
 
-	const addNotification = (message) => {
-		setNotifications((prevNotifications) => [...prevNotifications, message]);
+	const addNotification = (message, type) => {
+		setNotifications((prevNotifications) => [
+			...prevNotifications,
+			{ message, type },
+		]);
 	};
 
 	return (
 		<Disclosure
 			as='nav'
-			className='bg-white shadow-md'>
+			className='bg-green-800 shadow-md sticky top-0 z-50'>
 			{({ open }) => (
 				<>
 					<div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
 						<div className='relative flex h-16 items-center justify-between'>
 							<div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
 								{/* Mobile menu button */}
-								<Disclosure.Button className='inline-flex items-center justify-center p-2 text-gray-400 hover:bg-gray-200 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900'>
+								<Disclosure.Button className='inline-flex items-center justify-center p-2 text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-300'>
 									<span className='sr-only'>Open main menu</span>
 									{open ? (
 										<XMarkIcon
@@ -83,11 +82,11 @@ export default function Nav() {
 									)}
 								</Disclosure.Button>
 							</div>
-							<div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
+							<div className='flex flex-1 items-center justify-between sm:items-stretch sm:justify-start'>
 								<div className='flex flex-shrink-0 items-center'>
 									<img
 										src='https://www.shutterstock.com/image-vector/agriculture-logo-template-suitable-businesses-600nw-2127348449.jpg'
-										className='h-8 w-auto'
+										className='h-8 w-auto rounded-full'
 										alt='Company Logo'
 									/>
 								</div>
@@ -97,10 +96,11 @@ export default function Nav() {
 											key={item.name}
 											to={item.href}
 											className={classNames(
-												item.current
-													? "bg-gray-200 text-gray-900"
-													: "text-gray-600 hover:bg-gray-100 hover:text-gray-900",
-												"rounded-md px-4 py-2 text-sm font-medium"
+												"rounded-md px-4 py-2 text-sm font-medium",
+												"hover:bg-green-600 hover:text-white",
+												"focus:outline-none focus:ring-2 focus:ring-green-300",
+												"transition duration-300 ease-in-out",
+												"bg-green-700 text-white"
 											)}
 											aria-current={item.current ? "page" : undefined}>
 											{item.name}
@@ -111,7 +111,7 @@ export default function Nav() {
 							<div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
 								<button
 									type='button'
-									className='relative p-1 text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900'
+									className='relative p-1 text-white hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-green-300'
 									onClick={toggleNotifications}>
 									<span className='sr-only'>View notifications</span>
 									<BellIcon
@@ -129,7 +129,7 @@ export default function Nav() {
 									as='div'
 									className='relative ml-3'>
 									<div>
-										<Menu.Button className='flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-gray-900'>
+										<Menu.Button className='flex rounded-full bg-green-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-green-300'>
 											<span className='sr-only'>Open user menu</span>
 											<img
 												className='h-8 w-8 rounded-full'
@@ -153,7 +153,7 @@ export default function Nav() {
 														to='/profile'
 														className={classNames(
 															active
-																? "bg-gray-100 text-gray-900"
+																? "bg-green-100 text-green-900"
 																: "text-gray-700",
 															"block px-4 py-2 text-sm"
 														)}>
@@ -167,7 +167,7 @@ export default function Nav() {
 														to='/settings'
 														className={classNames(
 															active
-																? "bg-gray-100 text-gray-900"
+																? "bg-green-100 text-green-900"
 																: "text-gray-700",
 															"block px-4 py-2 text-sm"
 														)}>
@@ -181,7 +181,7 @@ export default function Nav() {
 														href='#'
 														className={classNames(
 															active
-																? "bg-gray-100 text-gray-900"
+																? "bg-green-100 text-green-900"
 																: "text-gray-700",
 															"block px-4 py-2 text-sm"
 														)}
@@ -203,7 +203,7 @@ export default function Nav() {
 								<Link
 									key={item.name}
 									to={item.href}
-									className='block px-4 py-2 text-base font-medium text-gray-900 bg-gray-100'
+									className='block px-4 py-2 text-base font-medium text-green-900 bg-green-100 rounded-md'
 									aria-current={item.current ? "page" : undefined}>
 									{item.name}
 								</Link>
@@ -213,11 +213,11 @@ export default function Nav() {
 
 					{/* Notification Panel */}
 					<div
-						className={`fixed right-0 top-16 z-30 w-80 bg-white shadow-lg transform ${
+						className={`fixed right-0 top-16 z-30 w-80 bg-white shadow-lg rounded-lg transform ${
 							notificationsOpen ? "translate-x-0" : "translate-x-full"
 						} transition-transform duration-300 ease-in-out`}>
 						<div className='p-4'>
-							<h3 className='text-lg font-semibold text-gray-900'>
+							<h3 className='text-lg font-semibold text-green-900'>
 								Notifications
 							</h3>
 							{/* Notifications */}
@@ -225,14 +225,23 @@ export default function Nav() {
 								{notifications.map((notification, index) => (
 									<li
 										key={index}
-										className='text-sm text-gray-700'>
-										{notification}
+										className={`flex items-center p-3 rounded-lg text-sm font-medium ${
+											notification.type === "info"
+												? "bg-blue-100 text-blue-700 border-blue-500 border-l-4"
+												: notification.type === "warning"
+												? "bg-yellow-100 text-yellow-700 border-yellow-500 border-l-4"
+												: "bg-green-100 text-green-700 border-green-500 border-l-4"
+										}`}>
+										<span className='mr-2'>
+											{/* Optional: Add different icons based on type */}
+										</span>
+										{notification.message}
 									</li>
 								))}
 							</ul>
 							<button
 								onClick={() => setNotificationsOpen(false)}
-								className='absolute top-2 right-2 p-1 text-gray-600 hover:text-gray-900'>
+								className='absolute top-2 right-2 p-1 text-gray-600 hover:text-gray-900 rounded-full bg-gray-200'>
 								<XMarkIcon
 									className='h-6 w-6'
 									aria-hidden='true'
