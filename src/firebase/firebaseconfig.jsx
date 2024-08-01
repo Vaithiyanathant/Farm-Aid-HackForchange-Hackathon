@@ -6,13 +6,13 @@ import { getStorage } from "firebase/storage";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-	apiKey: "AIzaSyDLe1QUByV2AUqmL_c3zLtLLn1wv-dDXDQ",
-	authDomain: "farmaid-ec5d6.firebaseapp.com",
-	projectId: "farmaid-ec5d6",
-	storageBucket: "farmaid-ec5d6.appspot.com",
-	messagingSenderId: "663260967698",
-	appId: "1:663260967698:web:5a737342c67acc762679cb",
-	measurementId: "G-CFBD20P620",
+	apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+	authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+	projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+	storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+	appId: import.meta.env.VITE_FIREBASE_APP_ID,
+	measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
@@ -22,4 +22,4 @@ const db = getFirestore(app);
 const storage = getStorage(app);
 const provider = new GoogleAuthProvider();
 
-export { auth, db , storage, provider };
+export { auth, db, storage, provider };

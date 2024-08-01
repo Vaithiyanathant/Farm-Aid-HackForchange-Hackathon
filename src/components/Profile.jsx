@@ -120,35 +120,35 @@ const Profile = () => {
 	return (
 		<>
 			<Nav />
-			<div className='p-6 bg-gray-100 min-h-screen'>
-				<div className='flex flex-col md:flex-row space-x-6'>
+			<div className='p-4 md:p-6 bg-gray-100 min-h-screen'>
+				<div className='flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6'>
 					{/* Left Box - Profile Picture and Basic Info */}
-					<div className='w-full md:w-1/3 bg-green-50 p-6 rounded-lg shadow-lg'>
+					<div className='w-full md:w-1/3 bg-green-50 p-4 md:p-6 rounded-lg shadow-lg'>
 						<div className='flex items-center space-x-4'>
 							<div className='w-16 h-16 bg-green-200 rounded-full flex items-center justify-center text-3xl text-green-700'>
 								<FaUser />
 							</div>
 							<div>
-								<h2 className='text-2xl font-bold text-green-800'>
+								<h2 className='text-xl md:text-2xl font-bold text-green-800'>
 									{profile.name || "John Doe"}
 								</h2>
 								<p className='text-gray-600'>{profile.role || "Farmer"}</p>
 							</div>
 						</div>
 						<div className='mt-4'>
-							<p className='text-gray-700 flex items-center'>
+							<p className='text-gray-700 flex items-center text-sm md:text-base'>
 								<FaEnvelope className='mr-2 text-green-600' />
 								Email: {profile.email || "john.doe@example.com"}
 							</p>
-							<p className='text-gray-700 flex items-center'>
+							<p className='text-gray-700 flex items-center text-sm md:text-base'>
 								<FaPhone className='mr-2 text-green-600' />
 								Phone: {profile.phone || "+1234567890"}
 							</p>
-							<p className='text-gray-700 flex items-center'>
+							<p className='text-gray-700 flex items-center text-sm md:text-base'>
 								<FaMapMarkerAlt className='mr-2 text-green-600' />
 								District: {profile.district || "District"}
 							</p>
-							<p className='text-gray-700 flex items-center'>
+							<p className='text-gray-700 flex items-center text-sm md:text-base'>
 								<FaMapMarkerAlt className='mr-2 text-green-600' />
 								City: {profile.city || "City"}
 							</p>
@@ -214,10 +214,10 @@ const Profile = () => {
 
 					{/* Right Box - Profile Details and Charts */}
 					<div className='w-full md:w-2/3'>
-						<div className='bg-white p-6 rounded-lg shadow-lg'>
+						<div className='bg-white p-4 md:p-6 rounded-lg shadow-lg'>
 							{/* Line Chart Example */}
-							<div className='mb-6'>
-								<h4 className='text-lg font-semibold mb-2 text-green-700'>
+							<div className='mb-4 md:mb-6'>
+								<h4 className='text-lg md:text-xl font-semibold mb-2 text-green-700'>
 									Activity Trends
 								</h4>
 								<ResponsiveContainer
@@ -238,7 +238,7 @@ const Profile = () => {
 								</ResponsiveContainer>
 							</div>
 
-							<h3 className='text-xl font-semibold mb-4 text-green-800'>
+							<h3 className='text-lg md:text-xl font-semibold mb-4 text-green-800'>
 								Profile Overview
 							</h3>
 							<p className='text-gray-700 mb-4'>
@@ -246,8 +246,8 @@ const Profile = () => {
 							</p>
 
 							{/* IoT Device Status */}
-							<div className='mb-6'>
-								<h4 className='text-lg font-semibold mb-2 text-green-700'>
+							<div className='mb-4 md:mb-6'>
+								<h4 className='text-lg md:text-xl font-semibold mb-2 text-green-700'>
 									IoT Devices
 								</h4>
 								{devices.length > 0 ? (
@@ -262,7 +262,7 @@ const Profile = () => {
 															{device.name}
 														</span>
 														<span
-															className={`px-2 py-1 text-sm rounded-full ${
+															className={`px-2 py-1 text-xs md:text-sm rounded-full ${
 																device.status === "Online"
 																	? "bg-green-100 text-green-700"
 																	: "bg-red-100 text-red-700"
@@ -270,7 +270,7 @@ const Profile = () => {
 															{device.status}
 														</span>
 													</div>
-													<p className='text-gray-600 text-sm'>
+													<p className='text-gray-600 text-xs md:text-sm'>
 														Last Updated: {device.lastUpdated}
 													</p>
 												</li>
@@ -283,8 +283,8 @@ const Profile = () => {
 							</div>
 
 							{/* Alerts and Notifications */}
-							<div className='mb-6'>
-								<h4 className='text-lg font-semibold mb-2 text-green-700'>
+							<div className='mb-4 md:mb-6'>
+								<h4 className='text-lg md:text-xl font-semibold mb-2 text-green-700'>
 									Recent Alerts
 								</h4>
 								{alerts.length > 0 ? (
@@ -299,7 +299,7 @@ const Profile = () => {
 															<FaBell className='mr-2' />
 															{alert.message}
 														</span>
-														<span className='text-gray-600 text-sm'>
+														<span className='text-gray-600 text-xs md:text-sm'>
 															<FaClock className='mr-1' />
 															{alert.timestamp}
 														</span>
@@ -314,12 +314,12 @@ const Profile = () => {
 							</div>
 
 							{/* Additional Charts and Graphs */}
-							<div className='mb-6'>
-								<h4 className='text-lg font-semibold mb-2 text-green-700'>
+							<div className='mb-4 md:mb-6'>
+								<h4 className='text-lg md:text-xl font-semibold mb-2 text-green-700'>
 									Performance Summary
 								</h4>
 								{/* Example Placeholder for Additional Charts */}
-								<div className='h-64 bg-green-50 rounded-lg flex items-center justify-center text-gray-600'>
+								<div className='h-48 md:h-64 bg-green-50 rounded-lg flex items-center justify-center text-gray-600'>
 									{/* Add additional chart components here */}
 									<p>No additional charts available</p>
 								</div>
