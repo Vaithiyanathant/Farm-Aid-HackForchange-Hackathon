@@ -1,7 +1,7 @@
 # 🌾 Welcome to the Farm Management Dashboard
 # FarmAid
 
-Hosted link: [🌐 Click here !!](https://code-craftor.vercel.app)
+Hosted link: [🌐 Click here !!](https://farmaid.vercel.app)
 
 It is my great pleasure to introduce our new application designed specifically for farmers, recognizing their vital role as the backbone of our global agriculture. Welcome to the **Farm Management Dashboard**! 🎉
 
