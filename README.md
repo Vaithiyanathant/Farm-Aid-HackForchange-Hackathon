@@ -78,6 +78,7 @@ This innovative application empowers you to manage your farm efficiently through
 ![Screenshot 1](https://drive.google.com/uc?export=view&id=1ifnRUtN-4kD4Nn_R368AYFqEUkkZ-jQ9)
 ![Screenshot 6](https://drive.google.com/uc?export=view&id=1dq6nHhVFqEvxIks2vQIWse5de3Isa72U)
 ![Screenshot 7](https://drive.google.com/uc?export=view&id=1dSQ_l-F3AJkKRMdlTPFz1p2i29SqrTH-)
+![Screenshot 8](https://drive.google.com/uc?export=view&id=1UmE34nogXnUew39SbYGsehl9AV-eVOTd)
 
 ## Desktop Screenshots
 ![Screenshot 10](https://drive.google.com/uc?export=view&id=1gICgZO0x35zFZhulBzwSkI8X-otvA6fx)
