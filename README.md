@@ -5,6 +5,7 @@ It is my great pleasure to introduce our new application designed specifically f
 
 This innovative application empowers you to manage your farm efficiently through a suite of powerful tools and features, each crafted to enhance your productivity and sustainability. Here’s what you can expect:
 
+
 ## Key Features:
 
 - **Predictive Analytics Dashboard:** Leverage advanced machine learning models to receive accurate crop yield predictions, optimize planting schedules, and make data-driven decisions that enhance productivity.
