@@ -159,7 +159,7 @@ We welcome and appreciate your contributions to the **Farm Management Dashboard*
 
 We value your feedback and suggestions to enhance the **Farm Management Dashboard**! If you have any ideas for improvement, encounter issues, or have general comments, please feel free to open an issue or start a discussion in our GitHub repository. Your input is crucial in helping us create a better tool for farmers.
 
-You can also send your feedback or suggestions via email to [your-email@example.com](mailto:vaithiyanathan30@example.com). 
+You can also send your feedback or suggestions via email to [vaithiyanathan30@gamil.com](mailto:vaithiyanathan30@example.com). 
 
 Thank you for your contributions and support!
 
