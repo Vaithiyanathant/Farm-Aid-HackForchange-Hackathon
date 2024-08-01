@@ -118,11 +118,10 @@ This innovative application empowers you to manage your farm efficiently through
 
 
 
-## 🎥 Watch the Demo
 
 ## 🎥 Watch the Demo
-
-<iframe src="https://drive.google.com/file/d/1ew04h21BQNB8AlQFX2o3BQ3ErKaJ7fqJ/preview" width="640" height="480" allow="autoplay"></iframe>
+[![Watch the video](https://drive.google.com/uc?export=view&id=1HyglDTvOkm6zvqE4kFA8lTRLdf5A4FP5
+)](https://drive.google.com/file/d/1ew04h21BQNB8AlQFX2o3BQ3ErKaJ7fqJ/view?usp=drive_link)
 
 
 ## 🤝 Contributing
