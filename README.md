@@ -65,20 +65,39 @@ This innovative application empowers you to manage your farm efficiently through
 - **Vite:** For fast and efficient development. Vite's blazing fast build tool offers a smooth development experience with minimal configuration.
 - **JavaScript:** As the primary programming language for web development, enabling dynamic interactions on the website.
 
-
 ## Mobile Screenshots
- ![Screenshot 11](https://drive.google.com/uc?export=view&id=1VaO5WQMiiGdHSozw0qFbOFA4E8K1ddzX)
- ![Screenshot 8](https://drive.google.com/uc?export=view&id=1FZ8HtDuc79-_TMlDgFFRHV80ZqkFWNQ4)
- ![Screenshot 9](https://drive.google.com/uc?export=view&id=1mzyx11TepupU-gADtRscAulqUsLAibYg)
- ![Screenshot 10](https://drive.google.com/uc?export=view&id=1VcZz_wCy1lpcZp9CVq_IQzIsbKHnkNg5)
- ![Screenshot 5](https://drive.google.com/uc?export=view&id=1woTQ-kNYgGjVpAGMdWj600Q4Rcqd8EEi)
-![Screenshot 4](https://drive.google.com/uc?export=view&id=1R39R61Ei35nWwjtlrzHSyhu0vXeANvnK)
- ![Screenshot 3](https://drive.google.com/uc?export=view&id=1Esh47HNqqT1Q-BeIMr4jX0W7yzU1sh12)
-![Screenshot 2](https://drive.google.com/uc?export=view&id=1m5T8ng245U4y3o7gKt5auSSRThIXNBrf)
-![Screenshot 1](https://drive.google.com/uc?export=view&id=1ifnRUtN-4kD4Nn_R368AYFqEUkkZ-jQ9)
-![Screenshot 6](https://drive.google.com/uc?export=view&id=1dq6nHhVFqEvxIks2vQIWse5de3Isa72U)
-![Screenshot 7](https://drive.google.com/uc?export=view&id=1dSQ_l-F3AJkKRMdlTPFz1p2i29SqrTH-)
-![Screenshot 8](https://drive.google.com/uc?export=view&id=1UmE34nogXnUew39SbYGsehl9AV-eVOTd)
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+  <img src="https://drive.google.com/uc?export=view&id=1VaO5WQMiiGdHSozw0qFbOFA4E8K1ddzX" alt="Screenshot 11" style="width: 48%;">
+  <img src="https://drive.google.com/uc?export=view&id=1FZ8HtDuc79-_TMlDgFFRHV80ZqkFWNQ4" alt="Screenshot 8" style="width: 48%;">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+  <img src="https://drive.google.com/uc?export=view&id=1mzyx11TepupU-gADtRscAulqUsLAibYg" alt="Screenshot 9" style="width: 48%;">
+  <img src="https://drive.google.com/uc?export=view&id=1VcZz_wCy1lpcZp9CVq_IQzIsbKHnkNg5" alt="Screenshot 10" style="width: 48%;">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+  <img src="https://drive.google.com/uc?export=view&id=1woTQ-kNYgGjVpAGMdWj600Q4Rcqd8EEi" alt="Screenshot 5" style="width: 48%;">
+  <img src="https://drive.google.com/uc?export=view&id=1R39R61Ei35nWwjtlrzHSyhu0vXeANvnK" alt="Screenshot 4" style="width: 48%;">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+  <img src="https://drive.google.com/uc?export=view&id=1Esh47HNqqT1Q-BeIMr4jX0W7yzU1sh12" alt="Screenshot 3" style="width: 48%;">
+  <img src="https://drive.google.com/uc?export=view&id=1m5T8ng245U4y3o7gKt5auSSRThIXNBrf" alt="Screenshot 2" style="width: 48%;">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+  <img src="https://drive.google.com/uc?export=view&id=1ifnRUtN-4kD4Nn_R368AYFqEUkkZ-jQ9" alt="Screenshot 1" style="width: 48%;">
+  <img src="https://drive.google.com/uc?export=view&id=1dq6nHhVFqEvxIks2vQIWse5de3Isa72U" alt="Screenshot 6" style="width: 48%;">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+  <img src="https://drive.google.com/uc?export=view&id=1dSQ_l-F3AJkKRMdlTPFz1p2i29SqrTH-" alt="Screenshot 7" style="width: 48%;">
+  <img src="https://drive.google.com/uc?export=view&id=1UmE34nogXnUew39SbYGsehl9AV-eVOTd" alt="Screenshot 8" style="width: 48%;">
+</div>
+
+
 ## Desktop Screenshots
 ![Screenshot 10](https://drive.google.com/uc?export=view&id=1gICgZO0x35zFZhulBzwSkI8X-otvA6fx)
  ![Screenshot 5](https://drive.google.com/uc?export=view&id=1HyglDTvOkm6zvqE4kFA8lTRLdf5A4FP5)
