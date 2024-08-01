@@ -79,47 +79,6 @@ This innovative application empowers you to manage your farm efficiently through
 ![Screenshot 6](https://drive.google.com/uc?export=view&id=1dq6nHhVFqEvxIks2vQIWse5de3Isa72U)
 ![Screenshot 7](https://drive.google.com/uc?export=view&id=1dSQ_l-F3AJkKRMdlTPFz1p2i29SqrTH-)
 ![Screenshot 8](https://drive.google.com/uc?export=view&id=1UmE34nogXnUew39SbYGsehl9AV-eVOTd)
-<div style="text-align: center;">
-  <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1VaO5WQMiiGdHSozw0qFbOFA4E8K1ddzX" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1FZ8HtDuc79-_TMlDgFFRHV80ZqkFWNQ4" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1mzyx11TepupU-gADtRscAulqUsLAibYg" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1VcZz_wCy1lpcZp9CVq_IQzIsbKHnkNg5" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1woTQ-kNYgGjVpAGMdWj600Q4Rcqd8EEi" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1R39R61Ei35nWwjtlrzHSyhu0vXeANvnK" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1Esh47HNqqT1Q-BeIMr4jX0W7yzU1sh12" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1m5T8ng245U4y3o7gKt5auSSRThIXNBrf" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1ifnRUtN-4kD4Nn_R368AYFqEUkkZ-jQ9" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1dq6nHhVFqEvxIks2vQIWse5de3Isa72U" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1dSQ_l-F3AJkKRMdlTPFz1p2i29SqrTH-" style="width: 100%; height: auto;"/>
-    </div>
-    <div style="flex: 1 0 50%; max-width: 50%; box-sizing: border-box; padding: 5px;">
-      <img src="https://drive.google.com/uc?export=view&id=1UmE34nogXnUew39SbYGsehl9AV-eVOTd" style="width: 100%; height: auto;"/>
-    </div>
-  </div>
-</div>
-
 ## Desktop Screenshots
 ![Screenshot 10](https://drive.google.com/uc?export=view&id=1gICgZO0x35zFZhulBzwSkI8X-otvA6fx)
  ![Screenshot 5](https://drive.google.com/uc?export=view&id=1HyglDTvOkm6zvqE4kFA8lTRLdf5A4FP5)
