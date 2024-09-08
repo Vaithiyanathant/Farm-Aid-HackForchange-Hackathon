@@ -17,14 +17,14 @@ const Home = () => {
 		// Simulate response generation with a delay
 		setTimeout(() => {
 			// Random responses logic
-			const responses = [
+		/*	const responses = [
 				"For pest control, consider using natural predators or organic pesticides.",
 				"Optimal irrigation levels are crucial. Make sure to water your crops early in the morning or late in the evening.",
 				"Maintaining soil health is vital. Regularly test your soil and use compost to improve its quality.",
 				"Monitor weather forecasts to plan your farming activities effectively.",
 				"Thank you for your message! We will get back to you shortly.",
-			];
-
+			];*/
+const responses = ["Under maintenance."];
 			const randomResponse =
 				responses[Math.floor(Math.random() * responses.length)];
 
