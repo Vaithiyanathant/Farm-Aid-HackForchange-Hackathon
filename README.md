@@ -58,7 +58,6 @@ This innovative application empowers you to manage your farm efficiently through
       </td>
     </tr>
   </table>
-  <br><br>
 </div>
 
 - **React:** For building the user interface. React's component-based architecture allows for a modular and maintainable codebase.
